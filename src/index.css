@@ -1,0 +1,260 @@
+@font-face {
+  font-family: OpenSans400;
+  src: url(assets/fonts/OpenSans-Regular.ttf);
+}
+
+@font-face {
+  font-family: OpenSans600;
+  src: url(assets/fonts/OpenSans-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: Oswald600;
+  src: url(assets/fonts/Oswald-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: Oswald500;
+  src: url(assets/fonts/Oswald-Medium.ttf);
+}
+
+@font-face {
+  font-family: Inter400;
+  src: url(assets/fonts/Inter-Regular.ttf);
+}
+
+@font-face {
+  font-family: Inter500;
+  src: url(assets/fonts/Inter-Medium.ttf);
+}
+
+@font-face {
+  font-family: Inter600;
+  src: url(assets/fonts/Inter-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: Poppins600;
+  src: url(assets/fonts/Poppins-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: Poppins500;
+  src: url(assets/fonts/Poppins-Medium.ttf);
+}
+
+@font-face {
+  font-family: Poppins400;
+  src: url(assets/fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+  font-family: Quicksand700;
+  src: url(assets/fonts/Quicksand-Bold.ttf);
+}
+
+:root {
+  --black: #000;
+  --primary: #f09819;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.flex {
+  display: flex;
+}
+
+.wraps {
+  flex-wrap: wrap;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.relative {
+  position: relative;
+}
+
+.left,
+.right {
+  position: absolute;
+  left: 74px;
+  height: 100%;
+  top: 0;
+}
+
+.right {
+  right: 74px;
+  left: auto;
+}
+
+.nav-button-closed {
+  border: none;
+  background-color: transparent;
+  top: 26px;
+  z-index: 4;
+  cursor: pointer;
+  position: absolute;
+}
+
+.nav-button-open {
+  position: fixed;
+  right: 41.01px;
+  top: 48.01px;
+  z-index: 100;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.nav-button-closed svg path {
+  stroke: rgba(19, 15, 38, 0.6);
+}
+
+.nav-button-open svg path {
+  stroke: #fff;
+}
+
+.nav-button-closed {
+  stroke: #fff;
+}
+
+.mobile_nav ul {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 8;
+  width: 100%;
+  top: 163px;
+  height: 100vh;
+}
+
+.background-inactive {
+  pointer-events: none;
+  background: transparent !important;
+}
+
+.mobile_nav_links_wrapper {
+  position: fixed;
+  height: 100%;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  overflow-y: scroll;
+}
+
+.mobile_nav_links_wrapper:not(.open) {
+  pointer-events: none;
+}
+
+.mobile_nav_links {
+  display: flex;
+  flex-direction: column;
+  gap: 45px;
+}
+
+.mobile_nav_links li a h2 {
+  text-align: center;
+  color: #fff;
+}
+
+.mobile_nav_list_button {
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ffffff;
+  border-radius: 8px;
+  width: fit-content;
+  align-self: center;
+  gap: 10px;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.select-none {
+  -webkit-user-select: none;
+  /* Safari */
+  -ms-user-select: none;
+  /* IE 10 and IE 11 */
+  user-select: none;
+  /* Standard syntax */
+}
+
+.go3958317564 {
+  font-family: Poppins400;
+}
+.locale-switcher {
+  padding-bottom: 0 !important;
+  margin-right: 30px;
+}
+
+.locale-switcher button {
+  padding: 14px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 52px;
+  border: 1px solid #000;
+  border-radius: 4px;
+  font-family: OpenSans400 !important;
+}
+
+.locale-switcher button span {
+  color: #000;
+}
+
+.locale-switcher [class*="ReactFlagsSelect-module_label"] {
+  font-family: OpenSans400 !important;
+}
+
+[class*="ReactFlagsSelect-module_selectOptions"]{
+  background: linear-gradient(90deg,#FF512F 0%,#F09819 100%) !important;
+  width: 168px;
+  border: none !important;
+  max-height: unset !important;
+}
+
+[class*="ReactFlagsSelect-module_selectOptions"] li{
+  color: #fff;
+  padding: 1rem 1.3rem;
+}
+
+[class*="ReactFlagsSelect-module_selectOptions"] li:hover{
+  background: #fff;
+  color: #000;
+}

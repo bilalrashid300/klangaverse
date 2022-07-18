@@ -1,0 +1,17 @@
+  <svg
+    width="3"
+    height="1137"
+    viewBox="0 0 3 1137"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <line
+      x1="1.5"
+      y1="-6.55671e-08"
+      x2="1.50005"
+      y2="1137"
+      stroke="black"
+      stroke-width="3"
+      stroke-dasharray="2 5"
+    />
+  </svg>

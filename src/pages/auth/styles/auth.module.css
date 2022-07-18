@@ -1,0 +1,127 @@
+.form_container {
+    width: 50%;
+    background-color: #fff;
+    padding-top: 82px;
+    padding-right: 146px;
+    margin-left: 50%;
+}
+
+
+.header {
+    font-family: Poppins600;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 72px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-bottom: 52px;
+}
+
+.password_group {
+    display: flex;
+    gap: 43px;
+}
+
+.password_group>div {
+    width: 100%;
+}
+
+.purchase_details {
+    margin-top: 28px;
+}
+
+.purchase_details_header {
+    font-family: Poppins500;
+    font-size: 24px;
+    line-height: 36px;
+    color: #000;
+    margin-bottom: 8px;
+}
+
+.terms {
+    margin-top: 37px;
+    margin-bottom: 45px;
+}
+
+.terms p,
+.login_prompt {
+    font-family: Poppins400;
+    margin-left: 13px;
+}
+
+.terms p span,
+.login_prompt p span,
+.terms p a,
+.login_prompt p a {
+    color: var(--primary);
+    cursor: pointer;
+}
+
+.login_prompt {
+    margin: 37px 0 73px 0;
+}
+
+.hidden_girl {
+    display: none;
+    margin-top: 12px;
+    margin-bottom: 35px;
+}
+
+.wrapper {
+    display: flex;
+}
+
+@media(max-width:1000px) {
+    .hidden_girl {
+        display: flex;
+    }
+
+    .wrapper {
+        flex-direction: column;
+    }
+
+    .wrapper>div {
+        width: 100%;
+    }
+
+    .form_container {
+        margin-left: 0;
+        padding-left: 50px;
+        padding-top: 32px;
+    }
+
+    .header {
+        font-size: 28px;
+        margin-bottom: 30px;
+        line-height: 30px;
+        text-align: center;
+    }
+
+    .purchase_details_header {
+        font-size: 20px;
+    }
+
+    .terms {
+        margin: 30px 0px;
+    }
+
+    .login_prompt {
+        text-align: center;
+    }
+}
+
+@media(max-width:600px) {
+    .wrapper {
+        width: 313px;
+        margin: 0 auto;
+    }
+
+    .form_container {
+        padding: 0;
+    }
+
+    .password_group {
+        flex-direction: column;
+        gap: 0;
+    }
+}
